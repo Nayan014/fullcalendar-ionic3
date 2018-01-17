@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Result</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item no-padding text-wrap >
+    Selected Event Title
+  </ion-item>
+
+  <b><h1 style="padding-top: 11px;"> {{ eventData }} </h1></b>
+
+  <ion-fab bottom right>
+    <button ion-fab icon-only (click)="homePage()">
+      <ion-icon name="ios-home-outline"></ion-icon>
+    </button>
+  </ion-fab>
+
+</ion-content>

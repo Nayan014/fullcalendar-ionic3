@@ -101,7 +101,8 @@ export class Calendar1Page {
       ],
       eventClick: function(calEvent, jsEvent, view) {
                 console.log(calEvent);
-              //  window.location.assign('#/create-event-sale')
+                localStorage.setItem( 'EventData', calEvent.title );
+                window.location.assign('#/result')
             }
     };  
   }
