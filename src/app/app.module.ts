@@ -5,12 +5,18 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
+
+import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar";
+
+import { Calendar1Page } from '../pages/calendar1/calendar1'
+import { Calendar2Page } from '../pages/calendar2/calendar2'
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    CalendarComponent,
+    Calendar1Page,
+    Calendar2Page
   ],
   imports: [
     BrowserModule,
@@ -19,12 +25,15 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    CalendarComponent,
+    Calendar1Page,
+    Calendar2Page
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CalendarComponent
   ]
 })
 export class AppModule {}
