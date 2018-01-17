@@ -6,10 +6,10 @@ https://www.npmjs.com/package/angular2-fullcalendar
 Copy fullcalendar.min.css form 'assets/fullcalender'
 also include in index.html
 
-Note:
+**Note:**
 
-We are using Calendar on two pages, and if we declare 
-      import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar";
+We are using Calendar on two pages, and if we declare <br />
+      import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar"; <br />
 on both page module then will get
 
       Error: Type CalendarComponent is part of the declarations of 2 modules: EventCalendarPageModule and PointOfSalePageModule! Please consider moving CalendarComponent to a higher module that imports EventCalendarPageModule and PointOfSalePageModule.
@@ -17,8 +17,8 @@ on both page module then will get
 Source: https://github.com/ionic-team/ionic/issues/12333    <br />
 
 So we are not lazy loading our page and will declear in app.module.ts
-and also import 
-      import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar";
+and also import <br/>
+  import {CalendarComponent} from "ap-angular2-fullcalendar/src/calendar/calendar";
 
 
 ================================================<br />
